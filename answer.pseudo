@@ -1,0 +1,16 @@
+#!/usr/bin/ruby
+
+# Public: Duplicate some text an arbitrary number of times.
+#
+# name  - The String to be appended with a random number.
+#
+# Examples
+#
+#   name_generated_number("Jobspire")
+#   # => "Jobspire10"
+#
+# Returns a name generated number.
+def name_generated_number(name)
+	name += (rand(6..15)).to_s
+	print "Name GeneratedNumber : #{name}" 
+end
